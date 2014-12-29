@@ -1,0 +1,26 @@
+body {
+  background: $default-background image-url('background.jpg') center center no-repeat;
+  @include background-size(cover);
+  background-attachment: fixed;
+}
+
+#page {
+  margin: 50px auto 0;
+  max-width: 500px;
+
+  @include breakpoint($small) {
+    margin-top: 120px;
+  }
+
+  @include breakpoint($medium) {
+    margin-top: 250px;
+  }
+}
+
+#main {
+  background: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  @include border-radius(6px, 6px);
+  @include opacity(0.85);
+}

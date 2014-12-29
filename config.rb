@@ -14,6 +14,7 @@ firesass = false
 # Location of the your project's resources.
 css_dir         = "public/stylesheets"
 sass_dir        = "app/assets/stylesheets"
+images_dir      = "public/images"
 
 # Set this to the root of your project. All resource locations above are
 # considered to be relative to this path.
