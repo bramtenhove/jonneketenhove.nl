@@ -1,0 +1,120 @@
+#
+# Apache/PHP settings:
+#
+
+# No MultiViews
+Options -MultiViews
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Block access to directories without a default document.
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+# Allow access from all domains for web fonts.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+# Force IE to render pages in the highest available mode in the various
+# cases when it may not: http://hsivonen.iki.fi/doctype/ie-mode.pdf.
+# Use, if installed, Google Chrome Frame.
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=edge,chrome=1"
+  # `mod_headers` can't match based on the content-type, however, we only
+  # want to send this header for HTML pages and not for the other resources
+  <FilesMatch "\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svg|svgz|ttf|vcf|webapp|webm|webp|woff|xml|xpi)$">
+    Header unset X-UA-Compatible
+  </FilesMatch>
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteBase /
+
+  # Set "protossl" to "s" if we were accessed via https://.  This is used later
+  # if you enable "www." stripping or enforcement, in order to ensure that
+  # you don't bounce between http and https.
+  RewriteRule ^ - [E=protossl]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  # Make sure Authorization HTTP header is available to PHP
+  # even when running as CGI or FastCGI.
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+  # Block access to "hidden" directories whose names begin with a period. This
+  # includes directories used by version control systems such as Subversion or
+  # Git to store control files. Files whose names begin with a period, as well
+  # as the control files used by CVS, are protected by the FilesMatch directive
+  # above.
+  #
+  # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
+  # not possible to block access to entire directories from .htaccess because
+  # <DirectoryMatch> is not allowed here.
+  #
+  # If you do not have mod_rewrite installed, you should remove these
+  # directories from your webroot or otherwise protect them from being
+  # downloaded.
+  RewriteRule "(^|/)\." - [F]
+
+  # To redirect all users to access the site WITHOUT the 'www.' prefix.
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+  # Remove the .html extension.
+  RewriteCond %{THE_REQUEST} ^GET\ (.*)\.html\ HTTP
+  RewriteRule (.*)\.html$ $1 [R=301]
+
+  # Remove the .php extension.
+  RewriteCond %{THE_REQUEST} ^GET\ (.*)\.php\ HTTP
+  RewriteRule (.*)\.php$ $1 [R=301]
+
+  # Remove index and reference the directory.
+  RewriteRule (.*)/index$ $1/ [R=301]
+
+  # Remove trailing slash if not a directory.
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} /$
+  RewriteRule (.*)/ $1 [R=301]
+
+  # Forward request to HTML file, but don't redirect (bot friendly).
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule (.*) $1\.html [L]
+
+  # Forward request to PHP file, but don't redirect (bot friendly).
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule (.*) $1\.php [L]
+</IfModule>
+
+<IfModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_exclude mime ^image/.*
+  mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+# Caching certain filetypes.
+<FilesMatch "\.(ico|pdf|flv)$"> # 1 year
+  Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$"> # 1 week
+  Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+<FilesMatch "\.(xml|txt|css|js)$"> # 2 days
+  Header set Cache-Control "max-age=172800, proxy-revalidate"
+</FilesMatch>
+<FilesMatch "\.(html|htm|php)$"> # 10 minutes
+  Header set Cache-Control "max-age=600, private, proxy-revalidate"
+</FilesMatch>
