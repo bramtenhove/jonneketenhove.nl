@@ -24,3 +24,23 @@ body {
   @include border-radius(6px, 6px);
   @include opacity(0.85);
 }
+
+.button-wrapper {
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+
+  .button {
+    position: relative;
+    padding: 10px;
+    background: $default-button-color;
+    border: 1px dashed #fff;
+    box-shadow: 0 0 0 4px $default-button-color, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    @include border-radius(6px, 6px);
+
+    &:hover {
+      background: $default-button-hover-color;
+      box-shadow: 0 0 0 4px $default-button-hover-color, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    }
+  }
+}

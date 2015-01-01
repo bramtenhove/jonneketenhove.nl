@@ -180,6 +180,12 @@ h1 {
 	word-wrap: break-word;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: -1px -1px #aa3030;
+}
+
 body {
 	background: #eee url('../images/background.jpg?1419880020') center center no-repeat;
 	background-size: cover;
@@ -198,6 +204,26 @@ body {
 	border-radius: 6px / 6px;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
 	opacity: 0.85;
+}
+
+.button-wrapper {
+	position: relative;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.button-wrapper .button {
+	position: relative;
+	padding: 10px;
+	background: #dc4242;
+	border: 1px dashed #fff;
+	box-shadow: 0 0 0 4px #dc4242,2px 1px 6px 4px rgba(10,10,0,0.5);
+	border-radius: 6px / 6px;
+}
+
+.button-wrapper .button:hover {
+	background: #ff4d4d;
+	box-shadow: 0 0 0 4px #ff4d4d,2px 1px 6px 4px rgba(10,10,0,0.5);
 }
 
 @media (min-width: 480px) {
