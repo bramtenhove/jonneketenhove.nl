@@ -7,6 +7,7 @@ var gulp          = require('gulp'),
     plumber       = require('gulp-plumber'),
     cmq           = require('gulp-combine-media-queries'),
     notify        = require('gulp-notify'),
+    minifyCSS     = require('gulp-minify-css'),
     rename        = require('gulp-rename');
 
 
@@ -28,6 +29,7 @@ gulp.task('styles', function() {
     }))
     .pipe(autoprefixer('last 2 versions', '> 1%', 'Explorer >= 9'))
     .pipe(cmq())
+    .pipe(minifyCSS())
     .pipe(gulp.dest('public/stylesheets'));
 });
 

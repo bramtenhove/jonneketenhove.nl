@@ -10,6 +10,7 @@
         "gulp-autoprefixer": "*",
         "gulp-plumber": "*",
         "gulp-combine-media-queries": "*",
+        "gulp-minify-css": "*",
         "gulp-notify": "*",
         "gulp-rename": "*",
         "gulp-concat": "*"
