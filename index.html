@@ -1,46 +1,361 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Jonneke ten Hove</title>
-    <meta name="description" content="Jonneke ten Hove">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-26432716-3', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
 
-    <div id="page">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- libraries -->
+    <script src="./jquery.onscreen.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="./javascript.js" type="text/javascript"></script>
+    <script src="greensock.js"></script>
+</head>
+<body>
+<div class="dots-menu"><i class="fa-2x fa fa-ellipsis-v" aria-hidden="true"></i></div>
+<div class="container-fluid" id="box1">
+  <div class="container" id="menu-box-container">
+    <div class="row justify-content-start">
+      <div class="col-sm menu-box menu-box1">
+        <a href="#portfolio">Portfolio</a>
+      </div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm"></div>
+      <div class="col-sm menu-box menu-box2">
+        <a href="#about">About</a>
+      </div>
+      <div class="col-sm"></div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+        <div class="col-sm menu-box menu-box3">
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
+  </div>
 
-      <div id="main">
-        <h1>Jonneke ten Hove</h1>
+  <div class="row angle-icon godown">
+      <div class="col"><a href="#portfolio"><i class="fa fa-4x fa-angle-down" aria-hidden="true"></i></a></div>
+  </div>
+</div>
 
-        <p>Ik ben Jonneke, 23 jaar en momenteel werkzaam in de zorg. Ik hou van uitdagingen en ben een harde werker.</p>
-        <p>Heeft u voor mij een nieuwe uitdaging, neem dan eens contact op.</p>
+<div class="container-fluid section" id="portfolio">
+    <h1>Portfolio</h1>
+    <p>Here you can see some of the things I made during college. Also you can see some projects I did in my freetime.<br>
+      When you click on a photo you can see information about the project itself.</p>
 
-        <div class="button-wrapper">
-          <a class="button" href="https://www.linkedin.com/in/jonneketenhove"><span>Bezoek mijn LinkedIn account</span></a>
+  <div class="container" id="portfolio-items">
+    <div class="row photos">
+      <!-- Thumbnail foto's -->
+      <div class="col-sm detail1" data-detail="detail1"></div>
+      <div class="col-sm detail2" data-detail="detail2"></div>
+      <div class="col-sm detail3" data-detail="detail3"></div>
+    </div>
+    <div class="photo-details">
+      <!-- DETAIL 1 -->
+      <div class="row photo-detail" id="detail1">
+        <div class="row angle-icon">
+          <!-- angle icon -->
+          <div class="col-sm"><i class="fa fa-2x fa-angle-down" aria-hidden="true"></i></div>
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+        </div>
+        <div class="row">
+          <!-- detail content -->
+          <div class="col-sm text">I have made several infographics that can be used separately as well as a set, this is reflected in the atmosphere. The continuity is reflected in the fashion items and in the combined animals that each have there own name and story to tell.<br>
+          <br> For this project I wanted to stay close to myself and what I stand for. This resulted in a search for my own style and in my opinion I have reached that goal.<br>
+          </div>
+          <div class="col-sm">
+            <!-- infographic foto's thumbnail -->
+            <div class="row video-infographic">
+              <div class="col-sm">
+                <!-- infographic foto 1 -->
+                <img src="./images/portfolio/infographic-large.png" class="infographic-thumb" data-toggle="modal" data-target=".bd-modal-lg">
+                
+                <!-- modal met grote foto 1 -->
+                <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/infographic-large.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <!-- infographic foto 2 -->
+                <img src="./images/portfolio/infographic2.png" class="infographic-thumb" data-toggle="modal" data-target=".bd-modal-lg2">
+                
+                <!-- modal met grote foto 2 -->
+                <div class="modal fade bd-modal-lg2" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/infographic2.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <!-- infographic foto 3 -->
+                <img src="./images/portfolio/infographic3.png" class="infographic-thumb" data-toggle="modal" data-target=".bd-modal-lg3">
+                
+                <!-- modal met grote foto 3 -->
+                <div class="modal fade bd-modal-lg3" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/infographic3.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
+      <!-- DETAIL 2 -->
+      <div class="row photo-detail" id="detail2">
+        <div class="row angle-icon">
+          <!-- angle icon -->
+          <div class="col-sm"></div>
+          <div class="col-sm"><i class="fa fa-2x fa-angle-down" aria-hidden="true"></i></div>
+          <div class="col-sm"></div>
+        </div>
+        <div class="row">
+          <!-- detail content -->
+          <div class="col-sm text">In this project I wanted to connect strangers by making an unconvential chat app. You can interact with it by pulling strings.<br> 
+          I truly love this project because I could focus on the things that I really love, namely; hard/software and design especially combining the two is what drove me.<br>
+          <br> In the video you can see how it works, I've also made a website where you can check for more information how I build it.<br>
+             <a href="https://colourfulmessage.jonneketenhove.nl/" target="_blank">Exhibition Sending a colorful message</a>
+          </div>
+          <div class="col-sm video-infographic">
+            <video width="100%" height="auto" controls>
+              <source src="./images/portfolio/Exhibition project Sending a colorful message.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!-- DETAIL 3 -->
+      <div class="row photo-detail" id="detail3">
+        <div class="row angle-icon">
+          <!-- angle icon -->
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+          <div class="col-sm"><i class="fa fa-2x fa-angle-down" aria-hidden="true"></i></div>
+        </div>
+        <div class="row">
+          <!-- detail content -->
+          <div class="col-sm text">This project was fun to make, we made an expedition for a client who wants to attract young adults that love to explore and travel.<br> This is why I've chosen the backpack theme.<br>
+            <br>You can also see the lookbook, flyer and website using the links below.<br>
+            <a href="http://expeditionruhr.jonneketenhove.nl/" target="_blank">Expedition Ruhr</a><br>
+            <a href="https://indd.adobe.com/view/e77cbec8-96c8-4820-ab0c-90748a7c0e13" target="_blank">Flyer</a><br>
+            <a href="https://indd.adobe.com/view/dd422da4-e224-4c2f-b4fe-f33483c028d7" target="_blank">Lookbook</a>
+            </div>
+          <div class="col-sm video-infographic">
+            <video width="100%" height="auto" controls>
+              <source src="./images/portfolio/promo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="row photos">
+      <!-- Thumbnail foto's -->
+      <div class="col-sm detail4" data-detail="" data-toggle="modal" data-target=".bd-modal-lg4">
+        <!-- modal met grote foto 4 -->
+        <div class="modal fade bd-modal-lg4" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img src="./images/portfolio/poster-sheep.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thumbnail foto's -->
+      <div class="col-sm detail5" data-detail="" data-toggle="modal" data-target=".bd-modal-lg5">
+        <!-- modal met grote foto 5 -->
+        <div class="modal fade bd-modal-lg5" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img src="./images/portfolio/zwart-wit.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thumbnail foto's -->
+      <div class="col-sm detail6" data-detail="" data-toggle="modal" data-target=".bd-modal-lg6">
+        <!-- modal met grote foto 6 -->
+        <div class="modal fade bd-modal-lg6" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img src="./images/portfolio/flyer-prive2.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row photos">
+      <div class="col-sm detail7" data-detail="detail4">
+        
+      </div>
+      <div class="col-sm detail8" data-detail="" data-toggle="modal" data-target=".bd-modal-lg8">
+        <!-- modal met grote foto 6 -->
+        <div class="modal fade bd-modal-lg8" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img src="./images/portfolio/school1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm detail9" data-detail="detail5">
+        
+      </div>
+    </div>
+    <!-- DETAIL 4 -->
+      <div class="row photo-detail" id="detail4">
+        <div class="row angle-icon">
+          <!-- angle icon -->
+          <div class="col-sm"><i class="fa fa-2x fa-angle-down" aria-hidden="true"></i></div>
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+        </div>
+        <div class="row">
+          <!-- detail content -->
+          <div class="col-sm text">
+            <div class="row">
+              <div class="col-sm">Here you can see some photo's of assignments I've done, and some photo's that I took for fun.</div></div>
+            <div class="row">
+              <div class="col-sm video-infographic">
+                <img class="infographic-thumb" src="./images/portfolio/photo-opdracht1.jpg" alt="" data-toggle="modal" data-target=".bd-modal-lg7-1">
+                <!-- modal met grote foto -->
+                <div class="modal fade bd-modal-lg7-1" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/photo-opdracht1.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm video-infographic">
+                <img class="infographic-thumb" src="./images/portfolio/photo-opdracht2.jpg" alt="" data-toggle="modal" data-target=".bd-modal-lg7-2">
+                <!-- modal met grote foto -->
+                <div class="modal fade bd-modal-lg7-2" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/photo-opdracht2.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- DETAIL 5 -->
+      <div class="row photo-detail" id="detail5">
+        <div class="row angle-icon">
+          <!-- angle icon -->
+          <div class="col-sm"></div>
+          <div class="col-sm"></div>
+          <div class="col-sm"><i class="fa fa-2x fa-angle-down" aria-hidden="true"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-sm text">
+            <!-- detail content -->
+            <div class="row">
+              <div class="col-sm">I've also done some work for a starting busines and made a logo, visitekaart and some flags with the brand name of te company.</div></div>
+            <div class="row">
+              <div class="col-sm video-infographic">
+                <img class="infographic-thumb" src="./images/portfolio/vlag-prive.jpg" alt="" data-toggle="modal" data-target=".bd-modal-lg9-1">
+                <!-- modal met grote foto -->
+                <div class="modal fade bd-modal-lg9-1" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/vlag-prive.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm video-infographic">
+                <img class="infographic-thumb" src="./images/portfolio/visitekaart-prive.png" alt="" data-toggle="modal" data-target=".bd-modal-lg9-2">
+                <!-- modal met grote foto -->
+                <div class="modal fade bd-modal-lg9-2" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <img src="./images/portfolio/visitekaart-prive.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 
-    <link href="/public/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet" type="text/css" />
-  </body>
-</html>
+<div class="container-fluid section" id="about">
+    <h1>About</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm about-text"><p>Who am I?
+          <br>A young woman with an excellent work mentality. Careful in performing tasks and thereby result- and customer-oriented. Strong analytical ability, with feedback and reflection playing an important role. All this is complemented by a good sense of justice and integrity.<br>
+
+          <br>Personal skills and competences:<br>
+          Analytical, Authentic, Helicopterview, Fair, Careful, Structured,
+          Result-oriented, Self-reflection, Initiator, Responsible,
+          Giving and receiving feedback<br>
+
+          <br>Organizational skills and competencies:<br>
+          Organizing, Self-management, Communicating
+          Delegating<br>
+
+          <br>In my freetime I like to read a good book, spend some time with family and friends, shoot photos and exploring new places.<br><p>
+        </div>
+        <div class="col-sm"><img class="ik" src="images/ik-2.jpg"></div>
+      </div>
+    </div>
+</div>
+
+<footer>
+  <div class="container-fluid section" id="contact">
+    <h1>Contact</h1>
+    <div class="footer-text">
+      <p>If you would like to contact me, you can send me an email at <span class="email">jonneketenhove@gmail.com</span></p>
+      <p>You can also check out my LinkedIn</p>
+      <p><a href="https://www.linkedin.com/in/jonneketenhove/" target="_blank"><img class="linkedin" src="images/linkedin.png" alt=""></a>
+      <div class="signature">
+        <img src="./images/signature.png" alt="">
+      </div></p>
+    </div>
+  </div>
+</footer>
+</body>
