@@ -24,27 +24,37 @@ $(document).ready(function() {
     });
 
     // Portfolio animatie.
-    $('#portfolio-items').onScreen({
+    $('#portfolio').onScreen({
       doIn: function () {
-        tl = new TimelineMax();
+
+        var tl = new TimelineMax();
         tl
-          .to($('#portfolio-items .photos .detail1 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5})
+          .to($('#portfolio-items .photos .detail1 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5})
+          .to($('#portfolio-items .photos .detail1 .shine'), 0, {display: 'none', left: -300})
           .add('detail1')
-          .to($('#portfolio-items .photos .detail2 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail1-=1')
+          .to($('#portfolio-items .photos .detail2 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail1-=0.5')
+          .to($('#portfolio-items .photos .detail2 .shine'), 0, {display: 'none', left: -300})
           .add('detail2')
-          .to($('#portfolio-items .photos .detail3 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail2-=1')
+          .to($('#portfolio-items .photos .detail3 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail2-=0.5')
+          .to($('#portfolio-items .photos .detail3 .shine'), 0, {display: 'none', left: -300})
           .add('detail3')
-          .to($('#portfolio-items .photos .detail4 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail3-=1')
+          .to($('#portfolio-items .photos .detail4 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail3-=0.5')
+          .to($('#portfolio-items .photos .detail4 .shine'), 0, {display: 'none', left: -300})
           .add('detail4')
-          .to($('#portfolio-items .photos .detail5 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail4-=1')
+          .to($('#portfolio-items .photos .detail5 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail4-=0.5')
+          .to($('#portfolio-items .photos .detail5 .shine'), 0, {display: 'none', left: -300})
           .add('detail5')
-          .to($('#portfolio-items .photos .detail6 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail5-=1')
+          .to($('#portfolio-items .photos .detail6 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail5-=0.5')
+          .to($('#portfolio-items .photos .detail6 .shine'), 0, {display: 'none', left: -300})
           .add('detail6')
-          .to($('#portfolio-items .photos .detail7 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail6-=1')
+          .to($('#portfolio-items .photos .detail7 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail6-=0.5')
+          .to($('#portfolio-items .photos .detail7 .shine'), 0, {display: 'none', left: -300})
           .add('detail7')
-          .to($('#portfolio-items .photos .detail8 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail7-=1')
+          .to($('#portfolio-items .photos .detail8 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail7-=0.5')
+          .to($('#portfolio-items .photos .detail8 .shine'), 0, {display: 'none', left: -300})
           .add('detail8')
-          .to($('#portfolio-items .photos .detail9 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail8-=1');
+          .to($('#portfolio-items .photos .detail9 .shine'), 0.5, {left:300, display: 'block', repeat: 1, repeatDelay: 0.5}, 'detail8-=0.5')
+          .to($('#portfolio-items .photos .detail9 .shine'), 0, {display: 'none', left: -300});
       }
     });
 
