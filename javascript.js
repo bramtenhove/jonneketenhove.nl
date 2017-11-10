@@ -43,32 +43,6 @@ $(document).ready(function(){
       $("#box1").goTo();
     });    
 
-    // als je klikt op een foto, dan opent hij bijbehorende detail.
-    $( ".photos .col-sm" ).on( "click", function( event ) {
-        var screenwidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-
-        // als schermbreedte meer is dan 576px laten we detail info openklappen
-        if (screenwidth > 576) {
-          var detail = $(this).attr("data-detail");
-
-          if (detail) {
-            //Aantal zichbare foto detail blokken.
-            var numbervisible = $('.photo-detail:visible').not('#' + detail).length;
-
-            // hide andere details.
-            $('.photo-detail').not('#' + detail).hide();
-
-            if (numbervisible > 0) {
-              // hide/show detail
-              $('#' + detail).toggle();
-            }
-            else {
-              // hide/show detail
-              $('#' + detail).slideToggle(400);
-            }
-          }
-        }
-    });
 
 });
 
