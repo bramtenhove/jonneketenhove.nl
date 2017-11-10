@@ -22,8 +22,31 @@ $(document).ready(function() {
                 .from(godown, 1.25, {y:-100, autoAlpha:0, ease:Power1.easeIn}, 'menu3-=1')
         }
     });
-    
 
+    // Portfolio animatie.
+    $('#portfolio-items').onScreen({
+      doIn: function () {
+        tl = new TimelineMax();
+        tl
+          .to($('#portfolio-items .photos .detail1 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5})
+          .add('detail1')
+          .to($('#portfolio-items .photos .detail2 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail1-=1')
+          .add('detail2')
+          .to($('#portfolio-items .photos .detail3 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail2-=1')
+          .add('detail3')
+          .to($('#portfolio-items .photos .detail4 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail3-=1')
+          .add('detail4')
+          .to($('#portfolio-items .photos .detail5 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail4-=1')
+          .add('detail5')
+          .to($('#portfolio-items .photos .detail6 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail5-=1')
+          .add('detail6')
+          .to($('#portfolio-items .photos .detail7 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail6-=1')
+          .add('detail7')
+          .to($('#portfolio-items .photos .detail8 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail7-=1')
+          .add('detail8')
+          .to($('#portfolio-items .photos .detail9 .shine'), 0.75, {left:300, opacity: 1, repeat: 2, repeatDelay: 0.5}, 'detail8-=1');
+      }
+    });
 
     // About text animatie.
     $('#about .about-text').onScreen({

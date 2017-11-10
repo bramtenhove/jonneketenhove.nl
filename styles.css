@@ -83,6 +83,15 @@ h1 {
     text-align: center;
 }
 
+.shine{
+    position:relative;
+    opacity:0;
+    width:100%;
+    height:100%;
+    left:-300px;
+    background:url('./images/glare.png');
+}
+
 #portfolio-items .photos .col-sm{
     background-color: darkblue;
     background-size: cover;
