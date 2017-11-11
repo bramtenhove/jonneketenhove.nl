@@ -8,6 +8,11 @@ $(document).ready(function() {
             var menu2 = $('.menu-box2');
             var menu3 = $('.menu-box3');
             var godown = $('.godown');
+            var ychange = -100;
+
+            if ($(window).height() < 675) {
+              ychange = -25;
+            }
 
             $('.detail1');
             tl = new TimelineMax();
@@ -19,7 +24,7 @@ $(document).ready(function() {
              .add('menu2')
               .from(menu3, 1.8, {y: -700, autoAlpha: 1, ease:Elastic.easeOut.config(1, 0.55)}, 'menu2-=1')
               .add('menu3')
-                .from(godown, 1.25, {y:-100, autoAlpha:0, ease:Power1.easeIn}, 'menu3-=1')
+                .from(godown, 1.25, {y:ychange, autoAlpha:0, ease:Power1.easeIn}, 'menu3-=1')
         }
     });
 
