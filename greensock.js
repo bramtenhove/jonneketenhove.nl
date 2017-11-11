@@ -11,7 +11,7 @@ $(document).ready(function() {
             var ychange = -100;
 
             if ($(window).height() < 675) {
-              ychange = -25;
+              ychange = -35;
             }
 
             $('.detail1');
