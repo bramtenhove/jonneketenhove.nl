@@ -109,6 +109,8 @@ h1 {
     height: 175px;
     color:#626467;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .photos .detail1 {
