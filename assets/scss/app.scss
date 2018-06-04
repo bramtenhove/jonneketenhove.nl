@@ -5,6 +5,7 @@
 // Set some own variables.
 // Update blue.
 $blue: #72d0eb;
+$blue-invert: findColorInvert($blue);
 // Add pink and its invert.
 $pink: #ffb3b3;
 $pink-invert: #fff;
@@ -13,8 +14,8 @@ $family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", "Helvetica", "Arial
 
 // Set the derived variables.
 // Use the new pink as the primary color.
-$primary: $pink;
-$primary-invert: $pink-invert;
+$primary: $blue;
+$primary-invert: $blue-invert;
 
 // Setup some Custom Colors.
 $linkedin: #0077b5;
