@@ -1,0 +1,52 @@
+// Stuff we need from Bulma at the very beginning.
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Set some own variables.
+// Update blue.
+$blue: #72d0eb;
+// Add pink and its invert.
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Update the sans-serif family.
+$family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Set the derived variables.
+// Use the new pink as the primary color.
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// Setup some Custom Colors.
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55aceb;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+// Add new color variables to the color map.
+@import "~bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+        "twitter":($twitter, $twitter-invert),
+        "linkedin": ($linkedin, $linkedin-invert),
+        "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// Import the rest of Bulma, one piece at a time.
+@import "~bulma/sass/utilities/_all";
+@import "~bulma/sass/base/_all";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/form";
+@import "~bulma/sass/elements/icon";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/elements/notification";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/elements/other";
+@import "~bulma/sass/components/breadcrumb";
+@import "~bulma/sass/components/level";
+@import "~bulma/sass/components/navbar";
+@import "~bulma/sass/grid/columns";
+@import "~bulma/sass/layout/_all";

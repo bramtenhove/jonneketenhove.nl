@@ -1,0 +1,13 @@
+{
+  "name": "jonneketenhove.nl",
+  "license": "proprietary",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.20.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "webpack-notifier": "^1.5.0"
+  }
+}
