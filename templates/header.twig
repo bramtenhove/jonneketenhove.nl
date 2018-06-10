@@ -1,24 +1,40 @@
 {% block header %}
-    <header>
-        <nav class="navbar">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="#" alt="Logo jonneketenhove.nl" width="112" height="28">
-                </a>
-                <div class="navbar-burger burger" data-target="navbar-main">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <section id="front-header" class="hero is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active">Introduction</a>
+                            <a class="navbar-item is-active">Work</a>
+                            <a class="navbar-item is-active">Contact</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </header>
+        </div>
 
-            <div id="navbar-main" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="/">
-                        Home
-                    </a>
-                </div>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-3">
+                    Hi there! 👋
+                </h2>
+                <h1 class="title is-2">
+                    I'm Jonneke
+                </h1>
             </div>
-        </nav>
-    </header>
+        </div>
+    </section>
 {% endblock %}

@@ -51,3 +51,4 @@ $colors: map-merge($colors, $addColors);
 @import "~bulma/sass/components/navbar";
 @import "~bulma/sass/grid/columns";
 @import "~bulma/sass/layout/_all";
+@import "header.scss";

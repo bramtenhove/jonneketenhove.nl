@@ -1,5 +1,7 @@
 {
+  "assets/js/app.js": "/assets/js/app.js",
   "assets/css/app.css": "/assets/css/app.css",
   "assets/js/navigation.js": "/assets/js/navigation.js",
-  "assets/js/alert.js": "/assets/js/alert.js"
+  "assets/js/alert.js": "/assets/js/alert.js",
+  "assets/images/header.jpg": "/assets/images/header.jpg"
 }
