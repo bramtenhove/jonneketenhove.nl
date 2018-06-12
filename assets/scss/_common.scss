@@ -1,0 +1,19 @@
+.full-background-image {
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-color: #999;
+}
+
+.full-background-image-fixed {
+  @extend .full-background-image;
+  background-attachment: fixed;
+}
+
+.divider {
+  display: block;
+  position: relative;
+  border-top: .1rem solid $grey;
+  height: .1rem;
+  margin: 2rem 0;
+}

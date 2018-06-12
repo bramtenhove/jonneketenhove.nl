@@ -14,8 +14,8 @@ $family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", "Helvetica", "Arial
 
 // Set the derived variables.
 // Use the new pink as the primary color.
-$primary: $blue;
-$primary-invert: $blue-invert;
+$primary: $pink;
+$primary-invert: $pink-invert;
 
 // Setup some Custom Colors.
 $linkedin: #0077b5;
@@ -50,5 +50,11 @@ $colors: map-merge($colors, $addColors);
 @import "~bulma/sass/components/level";
 @import "~bulma/sass/components/navbar";
 @import "~bulma/sass/grid/columns";
+@import "~bulma/sass/grid/tiles";
 @import "~bulma/sass/layout/_all";
+
+// Custom.
+@import "common.scss";
 @import "header.scss";
+@import "tiles.scss";
+@import "tile_images.sass";

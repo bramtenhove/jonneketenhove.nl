@@ -1,0 +1,63 @@
+{% block tiles %}
+    <div class="tile is-ancestor">
+        <div class="tile">
+            <div class="tile is-parent is-5">
+                <article class="tile is-child notification has-text-white tile-background-foo">
+                    <p class="title">Vertical...</p>
+                    <p class="subtitle">Top tile</p>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification has-text-white tile-background-bar">
+                    <p class="title">Middle tile</p>
+                    <p class="subtitle">With an image</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="tile is-ancestor">
+        <div class="tile">
+            <div class="tile is-parent is-7">
+                <article class="tile is-child notification has-text-white tile-background-bar">
+                    <p class="title">Wide tile</p>
+                    <p class="subtitle">Aligned with the right tile</p>
+                    <div class="content">
+                        <p>We can put in a bunch of content here. Did you know this? It's pretty nice and it looks cool.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-vertical has-text-white tile-background-bar">
+                    <p class="title">Vertical...</p>
+                    <p class="subtitle">Top tile</p>
+                </article>
+                <article class="tile is-child notification is-vertical has-text-white tile-background-bar">
+                    <p class="title">Vertical...</p>
+                    <p class="subtitle">Top tile</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child notification has-text-white tile-background-bar">
+                <p class="title">One column</p>
+                <p class="subtitle">yeah man</p>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child notification has-text-white tile-background-bar">
+                <p class="title">One column</p>
+                <p class="subtitle">With no content</p>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child notification has-text-white tile-background-bar">
+                <p class="title">One column</p>
+                <p class="subtitle">With no content</p>
+            </article>
+        </div>
+    </div>
+{% endblock %}

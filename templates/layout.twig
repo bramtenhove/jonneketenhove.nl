@@ -15,9 +15,17 @@
 
 {% include 'header.twig' %}
 
-{% block hero %}{% endblock %}
-
 {% block content %}{% endblock %}
+
+<section class="section" id="work">
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Some of my work</h1>
+            <p class="subtitle">Here are some projects I worked on in the last couple of years.</p>
+        </div>
+        {% include 'tiles.twig' %}
+    </div>
+</section>
 
 {% include 'footer.twig' %}
 
