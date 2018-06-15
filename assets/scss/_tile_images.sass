@@ -1,6 +1,0 @@
-$backgrounds: (foo: '/assets/images/header.jpg', bar: '/assets/images/header.jpg')
-
-@each $key, $image in $backgrounds
-  .tile-background-#{$key}
-    @extend .full-background-image
-    background-image: url(#{$image})

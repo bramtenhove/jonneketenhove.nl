@@ -1,7 +1,16 @@
 {
+  "assets/js/images.js": "/assets/js/images.js",
   "assets/js/app.js": "/assets/js/app.js",
   "assets/css/app.css": "/assets/css/app.css",
+  "assets/css/photoswipe.css": "/assets/css/photoswipe.css",
+  "assets/css/photoswipe-skin.css": "/assets/css/photoswipe-skin.css",
   "assets/js/navigation.js": "/assets/js/navigation.js",
   "assets/js/alert.js": "/assets/js/alert.js",
-  "assets/images/header.jpg": "/assets/images/header.jpg"
+  "assets/images/default-skin.png": "/assets/images/default-skin.png",
+  "assets/images/preloader.gif": "/assets/images/preloader.gif",
+  "assets/images/gorilla-tiny.jpg": "/assets/images/gorilla-tiny.jpg",
+  "assets/images/gorilla.jpg": "/assets/images/gorilla.jpg",
+  "assets/images/header-tiny.jpg": "/assets/images/header-tiny.jpg",
+  "assets/images/header.jpg": "/assets/images/header.jpg",
+  "assets/images/default-skin.svg": "/assets/images/default-skin.svg"
 }
