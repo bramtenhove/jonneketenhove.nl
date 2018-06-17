@@ -2,6 +2,16 @@
   min-height: 250px;
 }
 
-.tile .article {
-  display: block;
+.tile article {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+}
+
+.pswp__caption p.title,
+.pwsp__caption p.subtitle {
+  color: $white !important;
 }

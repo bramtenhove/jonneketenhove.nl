@@ -6,33 +6,16 @@
 // Update blue.
 $blue: #72d0eb;
 $blue-invert: findColorInvert($blue);
-// Add pink and its invert.
-$pink: #ffb3b3;
-$pink-invert: #fff;
+
+$navbar-item-color: $white-bis;
+$navbar-item-active-color: $white-bis;
+$navbar-item-hover-background-color: transparentize($grey-light, 0.8);
+
 // Update the sans-serif family.
 $family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-// Set the derived variables.
-// Use the new pink as the primary color.
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// Setup some Custom Colors.
-$linkedin: #0077b5;
-$linkedin-invert: findColorInvert($linkedin);
-$twitter: #55aceb;
-$twitter-invert: findColorInvert($twitter);
-$github: #333;
-$github-invert: findColorInvert($github);
-
 // Add new color variables to the color map.
 @import "~bulma/sass/utilities/derived-variables.sass";
-$addColors: (
-        "twitter":($twitter, $twitter-invert),
-        "linkedin": ($linkedin, $linkedin-invert),
-        "github": ($github, $github-invert)
-);
-$colors: map-merge($colors, $addColors);
 
 // Import the rest of Bulma, one piece at a time.
 @import "~bulma/sass/utilities/_all";
