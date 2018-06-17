@@ -1,10 +1,11 @@
 {
   "assets/js/images.js": "/assets/js/images.js",
-  "assets/js/app.js": "/assets/js/app.js",
+  "assets/js/photoswipe.js": "/assets/js/photoswipe.js",
   "assets/css/app.css": "/assets/css/app.css",
   "assets/css/photoswipe.css": "/assets/css/photoswipe.css",
   "assets/css/photoswipe-skin.css": "/assets/css/photoswipe-skin.css",
   "assets/js/navigation.js": "/assets/js/navigation.js",
+  "assets/js/app.js": "/assets/js/app.js",
   "assets/js/alert.js": "/assets/js/alert.js",
   "assets/images/default-skin.png": "/assets/images/default-skin.png",
   "assets/images/preloader.gif": "/assets/images/preloader.gif",
