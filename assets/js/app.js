@@ -1,6 +1,10 @@
 import ModalVideo from 'modal-video';
+import zenscroll from 'zenscroll';
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  // Configure smooth scrolling speed.
+  zenscroll.setup(400);
 
   // Setup modal videos for all video items.
   new ModalVideo('.modal-video-item', {

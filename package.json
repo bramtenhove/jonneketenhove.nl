@@ -3,7 +3,8 @@
   "license": "proprietary",
   "dependencies": {
     "bulma": "^0.7.1",
-    "modal-video": "^2.4.2"
+    "modal-video": "^2.4.2",
+    "zenscroll": "^4.0.2"
   },
   "devDependencies": {
     "@symfony/webpack-encore": "^0.20.1",
