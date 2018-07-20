@@ -17,10 +17,8 @@ Encore
   .addEntry('js/navigation', './assets/js/navigation.js')
   .addEntry('js/alert', './assets/js/alert.js')
   .addEntry('js/app', './assets/js/app.js')
-  .addEntry('js/photoswipe', './assets/js/photoswipe.js')
   .addStyleEntry('css/app', './assets/scss/app.scss')
-  .addStyleEntry('css/photoswipe', './node_modules/photoswipe/dist/photoswipe.css')
-  .addStyleEntry('css/photoswipe-skin', './node_modules/photoswipe/dist/default-skin/default-skin.css')
+  .addStyleEntry('css/modal-video', './node_modules/modal-video/css/modal-video.min.css')
 ;
 
 module.exports = Encore.getWebpackConfig();
