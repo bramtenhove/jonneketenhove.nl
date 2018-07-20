@@ -19,6 +19,9 @@ sublime-project
 # SASS
 .sass-cache
 
+# Twig cache
+cache
+
 node_modules
 
 vendor
