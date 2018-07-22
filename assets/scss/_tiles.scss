@@ -6,12 +6,30 @@
   }
 }
 
-.tile article:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
+.tile article {
+  cursor: pointer;
 
-.pswp__caption p.title,
-.pwsp__caption p.subtitle {
-  color: $white !important;
+  &:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+  }
+
+  &:hover:after {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+
+  p, .content p {
+    position: relative;
+    z-index: 1;
+  }
 }
