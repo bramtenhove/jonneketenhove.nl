@@ -1,14 +1,14 @@
 .tile.is-child {
-  min-height: 250px;
+  min-height: 350px;
+
+  &.is-tall {
+    min-height: 650px;
+  }
 }
 
-.tile article {
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-  }
+.tile article:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 
 .pswp__caption p.title,

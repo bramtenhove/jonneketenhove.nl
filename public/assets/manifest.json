@@ -1,12 +1,18 @@
 {
-  "assets/js/app.js": "/assets/js/app.js",
   "assets/js/images.js": "/assets/js/images.js",
+  "assets/js/app.js": "/assets/js/app.js",
   "assets/css/app.css": "/assets/css/app.css",
-  "assets/css/modal-video.css": "/assets/css/modal-video.css",
+  "assets/css/lightbox.css": "/assets/css/lightbox.css",
   "assets/js/navigation.js": "/assets/js/navigation.js",
   "assets/js/alert.js": "/assets/js/alert.js",
-  "assets/images/gorilla-tiny.jpg": "/assets/images/gorilla-tiny.jpg",
-  "assets/images/gorilla.jpg": "/assets/images/gorilla.jpg",
-  "assets/images/header-tiny.jpg": "/assets/images/header-tiny.jpg",
-  "assets/images/header.jpg": "/assets/images/header.jpg"
+  "assets/images/proefeet.jpg": "/assets/images/proefeet.jpg",
+  "assets/images/timescapes.jpg": "/assets/images/timescapes.jpg",
+  "assets/images/timescapes2.jpg": "/assets/images/timescapes2.jpg",
+  "assets/images/chat.jpg": "/assets/images/chat.jpg",
+  "assets/images/ik.jpg": "/assets/images/ik.jpg",
+  "assets/images/kookboek.jpg": "/assets/images/kookboek.jpg",
+  "assets/images/kerk3.jpg": "/assets/images/kerk3.jpg",
+  "assets/images/kerk2.jpg": "/assets/images/kerk2.jpg",
+  "assets/images/header.jpg": "/assets/images/header.jpg",
+  "assets/images/kerk.jpg": "/assets/images/kerk.jpg"
 }

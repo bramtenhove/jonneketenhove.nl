@@ -1,35 +1,34 @@
-import ModalVideo from 'modal-video';
 import zenscroll from 'zenscroll';
+import GLightbox from 'glightbox';
 
 document.addEventListener('DOMContentLoaded', function () {
 
   // Configure smooth scrolling speed.
   zenscroll.setup(400);
 
-  // Setup modal videos for all video items.
-  new ModalVideo('.modal-video-item', {
-    youtube: {
+  GLightbox({
+    selector: 'glightbox',
+    api: "https://www.youtube.com/iframe_api",
+    params: {
       autoplay: 1,
-      controls: 1,
-      modestbranding: true,
-      nocookie: true
+      modestbranding: 1,
+      showinfo: 0
     }
   });
 
-  // Make sure escape kills the modal window.
-  document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    let isEscape = false;
-    if ("key" in evt) {
-      isEscape = (evt.key == "Escape" || evt.key == "Esc");
+  // Click the first lightbox item when a tile article is clicked.
+  document.addEventListener('click', function (event) {
+
+    // Check if the target matches either the article or its text.
+    if (event.target.matches('.tile article')) {
+      // Click the first lightbox item.
+      event.target.querySelector('.lightbox-items a:first-child').click();
     }
-    else {
-      isEscape = (evt.keyCode == 27);
+    else if (event.target.matches('p.tile-text')) {
+      // Click the first lightbox item.
+      event.target.closest('.tile article').querySelector('.lightbox-items a:first-child').click();
     }
 
-    if (isEscape && document.getElementsByClassName('js-modal-video-dismiss-btn').length > 0) {
-      document.querySelector('.js-modal-video-dismiss-btn').click();
-    }
-  };
+  }, false);
 
 });

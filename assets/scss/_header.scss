@@ -1,4 +1,12 @@
 #front-header {
   @extend .full-background-image-fixed;
   background-image: url('/assets/images/header.jpg');
+
+  .hero-body .container {
+    margin-bottom: auto;
+  }
+
+  .navbar-burger span {
+    height: 2px;
+  }
 }
