@@ -6,15 +6,25 @@ document.addEventListener('DOMContentLoaded', function () {
   // Configure smooth scrolling speed.
   zenscroll.setup(400);
 
-  GLightbox({
-    selector: 'glightbox',
-    api: "https://www.youtube.com/iframe_api",
-    params: {
-      autoplay: 1,
-      modestbranding: 1,
-      showinfo: 0
-    }
-  });
+  let selectors = [
+    'glightbox1',
+    'glightbox2',
+    'glightbox3',
+    'glightbox4',
+    'glightbox5',
+    'glightbox6'
+  ];
+  for (let i = 0; i < selectors.length; i++) {
+    GLightbox({
+      selector: selectors[i],
+      api: "https://www.youtube.com/iframe_api",
+      params: {
+        autoplay: 1,
+        modestbranding: 1,
+        showinfo: 0
+      }
+    });
+  }
 
   // Click the first lightbox item when a tile article is clicked.
   document.addEventListener('click', function (event) {

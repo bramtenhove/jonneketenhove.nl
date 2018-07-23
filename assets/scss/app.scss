@@ -7,9 +7,10 @@
 $blue: #72d0eb;
 $blue-invert: findColorInvert($blue);
 
+$navbar-background-color: transparent;
 $navbar-item-color: $white-bis;
 $navbar-item-hover-color: $white-bis;
-$navbar-item-hover-background-color: transparentize($grey-dark, 0.8);
+$navbar-item-hover-background-color: transparent;
 
 // Update the sans-serif family.
 $family-sans-serif: "Open Sans", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

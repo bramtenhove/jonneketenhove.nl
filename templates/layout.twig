@@ -21,8 +21,9 @@
 <section class="section" id="work">
     <div class="container">
         <div class="content has-text-centered">
-            <h1 class="title">Some of my work</h1>
-            <p class="subtitle">Here are some projects I worked on in the last couple of years.</p>
+            <h1 class="title">Portfolio</h1>
+            <p class="subtitle">Hieronder vindt je een aantal projecten die ik in de afgelopen jaren heb gedaan.</p>
+            <p class="subtitle">Klik op de afbeeldingen om video's en/of foto's te bekijken.</p>
         </div>
         {% include 'tiles.twig' %}
     </div>
@@ -31,6 +32,10 @@
 {% include 'contact.twig' %}
 
 {% include 'footer.twig' %}
+
+{% block stylesheetsbottom %}
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
+{% endblock %}
 
 {% block javascripts %}
     <script src="/assets/js/app.js"></script>

@@ -109,12 +109,12 @@ Options +FollowSymLinks
 <FilesMatch "\.(ico|pdf|flv)$"> # 1 year
   Header set Cache-Control "max-age=29030400, public"
 </FilesMatch>
-<FilesMatch "\.(jpg|jpeg|png|gif|swf)$"> # 1 week
-  Header set Cache-Control "max-age=604800, public"
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$"> # 1 month
+  Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 <FilesMatch "\.(xml|txt|css|js)$"> # 2 days
   Header set Cache-Control "max-age=172800, proxy-revalidate"
 </FilesMatch>
-<FilesMatch "\.(html|htm|php)$"> # 10 minutes
-  Header set Cache-Control "max-age=600, private, proxy-revalidate"
+<FilesMatch "\.(html|htm|php)$"> # 1 hour
+  Header set Cache-Control "max-age=3600, private, proxy-revalidate"
 </FilesMatch>
