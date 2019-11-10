@@ -2,14 +2,14 @@
   "name": "jonneketenhove.nl",
   "license": "proprietary",
   "dependencies": {
-    "bulma": "^0.7.1",
-    "glightbox": "^1.0.6",
+    "bulma": "^0.8.0",
+    "glightbox": "^2.0.4",
     "zenscroll": "^4.0.2"
   },
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.20.1",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6",
-    "webpack-notifier": "^1.5.0"
+    "@symfony/webpack-encore": "^0.28.0",
+    "node-sass": "^4.13",
+    "sass-loader": "^8.0.0",
+    "webpack-notifier": "^1.8.0"
   }
 }
