@@ -15,3 +15,10 @@ require('../images/wnf-redesign-small.jpg');
 require('../images/wnf-wireframe-1.jpg');
 require('../images/wnf-wireframe-2.jpg');
 require('../images/wnf-wireframe-3.jpg');
+
+require('../images/gec-final.jpg');
+require('../images/gec-final-small.jpg');
+require('../images/gec-schets-1.jpg');
+require('../images/gec-schets-2.jpg');
+require('../images/gec-schets-3.jpg');
+require('../images/gec-schets-4.jpg');
