@@ -1,0 +1,34 @@
+{
+  "entrypoints": {
+    "js/images": {
+      "js": [
+        "/assets/js/images.js"
+      ]
+    },
+    "js/navigation": {
+      "js": [
+        "/assets/js/navigation.js"
+      ]
+    },
+    "js/alert": {
+      "js": [
+        "/assets/js/alert.js"
+      ]
+    },
+    "js/app": {
+      "js": [
+        "/assets/js/app.js"
+      ]
+    },
+    "css/app": {
+      "css": [
+        "/assets/css/app.css"
+      ]
+    },
+    "css/lightbox": {
+      "css": [
+        "/assets/css/lightbox.css"
+      ]
+    }
+  }
+}

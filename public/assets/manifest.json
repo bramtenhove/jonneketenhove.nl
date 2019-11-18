@@ -1,18 +1,18 @@
 {
-  "assets/js/images.js": "/assets/js/images.js",
-  "assets/js/app.js": "/assets/js/app.js",
   "assets/css/app.css": "/assets/css/app.css",
   "assets/css/lightbox.css": "/assets/css/lightbox.css",
-  "assets/js/navigation.js": "/assets/js/navigation.js",
   "assets/js/alert.js": "/assets/js/alert.js",
-  "assets/images/proefeet.jpg": "/assets/images/proefeet.jpg",
-  "assets/images/header.jpg": "/assets/images/header.jpg",
-  "assets/images/timescapes2.jpg": "/assets/images/timescapes2.jpg",
+  "assets/js/app.js": "/assets/js/app.js",
+  "assets/js/images.js": "/assets/js/images.js",
+  "assets/js/navigation.js": "/assets/js/navigation.js",
   "assets/images/bakkie.jpg": "/assets/images/bakkie.jpg",
   "assets/images/chat.jpg": "/assets/images/chat.jpg",
+  "assets/images/header.jpg": "/assets/images/header.jpg",
   "assets/images/ik.jpg": "/assets/images/ik.jpg",
-  "assets/images/kookboek.jpg": "/assets/images/kookboek.jpg",
+  "assets/images/kerk.jpg": "/assets/images/kerk.jpg",
   "assets/images/kerk2.jpg": "/assets/images/kerk2.jpg",
+  "assets/images/kookboek.jpg": "/assets/images/kookboek.jpg",
+  "assets/images/proefeet.jpg": "/assets/images/proefeet.jpg",
   "assets/images/timescapes.jpg": "/assets/images/timescapes.jpg",
-  "assets/images/kerk.jpg": "/assets/images/kerk.jpg"
+  "assets/images/timescapes2.jpg": "/assets/images/timescapes2.jpg"
 }

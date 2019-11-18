@@ -20,7 +20,11 @@
 
 .hero.is-almost-fullheight {
   @extend .is-fullheight;
-  min-height: 95vh;
+  min-height: 25vh;
+
+  @include tablet {
+    min-height: 95vh;
+  }
 }
 
 img {
