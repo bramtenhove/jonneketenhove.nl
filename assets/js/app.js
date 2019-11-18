@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     'glightbox3',
     'glightbox4',
     'glightbox5',
-    'glightbox6'
+    'glightbox6',
+    'glightbox7'
   ];
   for (let i = 0; i < selectors.length; i++) {
     GLightbox({
