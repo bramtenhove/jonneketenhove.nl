@@ -1,6 +1,10 @@
 #front-header {
   @extend .full-background-image-fixed;
-  background-image: url('../images/header.jpg');
+
+  background-color: #9bc3fa;
+  @include tablet {
+    background-image: url('../images/header.jpg');
+  }
 
   .hero-body .container {
     margin-bottom: auto;
